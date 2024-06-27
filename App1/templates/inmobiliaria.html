@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %} 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      body, html {
+          height: 100%;
+          margin: 0;
+      }
+
+      header {
+          text-align: center;
+          padding: 20px;
+      }
+
+      .property-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .property {
+          text-align: center;
+          margin: 20px 0;
+      }
+
+      .property img,
+      .property video {
+          display: block;
+          margin: 10px auto;
+      }
+
+      .property h2,
+      .property p {
+          margin: 10px 0;
+      }
+
+      .sangria {
+          text-align: justify;
+          margin: 20px;
+      }
+  </style>
+  <title>Servicios Inmobiliarios</title>
+</head>
+<body>
+  <header>
+    <h1 class="headerh1" style="text-align: center;">Servicios Inmobiliarios</h1>
+  </header>
+  <p class="sangria" style="text-align: justify;">
+    En servicios inmobiliarios ofrecemos una gama completa que complementan nuestra especialización principal en servicios jurídicos. Nuestra experiencia en ambos campos nos permite brindar un enfoque integral y completo para satisfacer todas tus necesidades legales e inmobiliarias.
+
+Nuestros servicios inmobiliarios incluyen:
+
+Gestión Integral de Propiedades: Administramos tus propiedades de manera eficiente y profesional, mientras te brindamos asesoramiento legal experto en cada paso del proceso.
+
+Contratos de Arrendamiento: Elaboramos contratos de arrendamiento sólidos y jurídicamente válidos, asegurando la protección de tus intereses como propietario.
+
+Selección Rigurosa de Inquilinos: Realizamos exhaustivas verificaciones de antecedentes y evaluaciones financieras para garantizar la selección de inquilinos confiables y solventes.
+
+Reparaciones y Mantenimiento: Gestionamos de manera eficaz cualquier reparación menor que surja durante el arrendamiento, manteniendo tus propiedades en óptimas condiciones y cumpliendo con todas las regulaciones legales pertinentes.
+
+Resolución de Litigios: En caso de disputas o conflictos, intervenimos para resolver rápidamente cualquier problema y proteger tus derechos legales como propietario. Estamos comprometidos a proporcionarte soluciones completas y personalizadas que aborden todas tus necesidades legales e inmobiliarias. Confía en nosotros para maximizar el rendimiento de tus inversiones inmobiliarias mientras te brindamos tranquilidad y seguridad legal. Contáctanos hoy mismo para obtener más información sobre cómo podemos ayudarte a alcanzar tus objetivos.
+
+  </p>
+  
+    <div class="property">
+      <h2>Propiedad en Venta</h2>
+      <img src="ruta/imagen-propiedad1.jpg" alt="Propiedad 1">
+      <p>Descripción de la propiedad en venta.</p>
+      <video width="640" height= "360" controls>
+        <source src="{%static 'video1.mp4' %}" type="video/mp4" style="text-align: center;">
+        Tu navegador no soporta el elemento de video.
+      </video>
+  </div>
+  
+
+
+  <script src="{% static 'script.js' %}"></script>
+
+
+  <div class="property">
+    <h2>Propiedad en Alquiler</h2>
+    <img src="ruta/imagen-propiedad2.jpg" alt="Propiedad 2">
+    <p>Descripción de la propiedad en alquiler.</p>
+    <video width="640" height= "360" controls>
+      <source src="{%static 'video2.mp4' %}" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+  
+
+   
+</body>
+{%endblock%}

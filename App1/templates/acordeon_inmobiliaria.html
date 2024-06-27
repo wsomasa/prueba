@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{%block content%}
+
+
+<body>
+    <h1>Propiedades Disponibles</h1>
+    
+    <!-- Acordeón para cada propiedad -->
+    <div class="acordeon">
+        <div class="acordeon-header">Propiedad 1</div>
+        <div class="acordeon-body">
+            <h2>Información de la Propiedad 1</h2>
+            <p>Descripción de la propiedad.</p>
+            <img src="/static/images/propiedad1.jpg" alt="Propiedad 1">
+            <!-- Agrega más información y contenido de la propiedad 1 aquí -->
+        </div>
+    </div>
+    
+    <div class="acordeon">
+        <div class="acordeon-header">Propiedad 2</div>
+        <div class="acordeon-body">
+            <h2>Información de la Propiedad 2</h2>
+            <p>Descripción de la propiedad.</p>
+            <img src="/static/images/propiedad2.jpg" alt="Propiedad 2">
+            <!-- Agrega más información y contenido de la propiedad 2 aquí -->
+        </div>
+    </div>
+
+    <!-- Agrega más acordeones según sea necesario para cada propiedad -->
+
+    <script>
+        // JavaScript para hacer que los acordeones sean colapsables
+        const acordeonHeaders = document.querySelectorAll('.acordeon-header');
+        acordeonHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const acordeonBody = header.nextElementSibling;
+                acordeonBody.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+{%endblock%}

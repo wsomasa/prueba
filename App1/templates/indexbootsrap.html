@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Jurídicos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Servicios Jurídicos</a>
+      <!-- Navbar toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#areas">Áreas de Práctica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1>Bienvenido a Nuestra Firma Legal</h1>
+      <p>Ofrecemos servicios legales de alta calidad en diversas áreas.</p>
+      <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- Áreas de Práctica -->
+  <section id="areas" class="areas-practica">
+    <div class="container">
+      <h2>Áreas de Práctica</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Penal</h3>
+          <p>Descripción de los servicios ofrecidos en derecho penal.</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Civil</h3>
+          <p>Descripción de los servicios ofrecidos en derecho civil.</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Mercantil</h3>
+          <p>Descripción de los servicios ofrecidos en derecho mercantil.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Familia</h3>
+          <p>Descripción de los servicios ofrecidos en derecho de familia.</p>
+        </div>
+        <!-- Añadir más áreas según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Envíanos un mensaje</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <h3>Información de Contacto</h3>
+          <p>Dirección: Dirección de la firma legal<br>
+          Teléfono: 123-456-7890<br>
+          Correo Electrónico: info@firmalegal.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios">
+    <div class="container">
+      <h2>Testimonios de Clientes</h2>
+      <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget felis at velit efficitur tempor.</p>
+            <h4 class="testimonial-author">John Doe</h4>
+          </div>
+          <!-- Añadir más testimonios según sea necesario -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 Firma Legal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

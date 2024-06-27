@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoría Jurídica</title>
+    </style>
+  <!-- Incluir archivos estáticos usando Django -->
+  <link href="{% static 'estilos.css' %}" rel="stylesheet">
+</head>
+<body>
+  <img src="{% static 'derecho1.png' %}" alt="Imagen de derecho"width="600" height="300">
+  <h1 id="nombre">Consultoría Jurídica</h1>
+  <h4 id="nombre">Abogado Emma Corina Bustos</h4>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      {% include 'contenido.txt' %}
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'areas_practica' %}">Áreas de Derecho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contacto' %}">contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'testimonios' %}">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'inmobiliaria' %}">Servicios Inmobiliarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'registro' %}">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Resto del contenido HTML -->
+  
+  
+  
+  
+  <script src="{% static 'script.js' %}"></script>
+</body>
+<!-- <a class="nav-link" href="{% url 'contacto' %}">Contacto</a> -->
+</html>
+
+<footer> <!-- es el final de la pagina, lo que deseas se muestre en la parte inferior de la pagina-->
+  
+
+  
+  <br>copyright 2000.<br>
+</footer>
+

@@ -1,0 +1,14 @@
+
+asgiref==3.8.1
+chardet==5.2.0
+diff-match-patch==20230430
+Django==5.0.4
+django-import-export==4.0.7
+django-phonenumber-field==7.3.0
+phonenumbers==8.13.34
+pillow==10.3.0
+pip==24.1
+reportlab==4.2.0
+sqlparse==0.4.4
+tablib==3.5.0
+tzdata==2024.1

@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+
+{% load static %}
+
+{%block content%}
+
+
+<body>
+  <video width="640" height="360" controls>
+    <source src="{% static 'video.mp4' %}" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
+  <script src="{% static 'script.js' %}"></script>
+</body>
+{%endblock%}
