@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b$qj4w@(yb0g=fceqah8x@4qrpc$c+@c9=@7son2y^i1!rh=!0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['obe.pythonanywhere.com']
+ALLOWED_HOSTS = [ ]
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'App1',
     'App_blog',
-    'App_areas',
+    'App_Area',
 ]
 
 MIDDLEWARE = [

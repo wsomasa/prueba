@@ -41,8 +41,8 @@
           <li class="nav-item {% if request.path == '/home/' %}active{%endif%} px-lg-4">
             <a class="nav-link text-touppercase text-expanded" href="{% url 'home' %}">Inicio</a>
           </li>
-          <li class="nav-item {% if request.path == '/areas_practica/' %}active{%endif%} px-lg-4">
-            <a class="nav-link text-touppercase text-expanded" href="{% url 'areas_practica' %}">Áreas de Derecho</a>
+          <li class="nav-item {% if request.path == '/area/' %}active{%endif%} px-lg-4">
+            <a class="nav-link text-touppercase text-expanded" href="{% url 'area' %}">Áreas de Derecho</a>
           </li>
           <li class="nav-item {% if request.path == '/inmobiliaria/' %}active{%endif%} px-lg-4">
             <a class="nav-link text-touppercase text-expanded" href="{% url 'inmobiliaria' %}">Servicios Inmobiliarios</a>
@@ -50,6 +50,7 @@
           <li class="nav-item {% if request.path == '/testimonios/' %}active{%endif%} px-lg-4">
             <a class="nav-link text-touppercase text-expanded" href="{% url 'testimonios' %}">Testimonios</a>
           </li>
+          
           <li class="nav-item {% if request.path == '/blog/' %}active{%endif%} px-lg-4">
             <a class="nav-link text-touppercase text-expanded" href="{% url 'blog' %}">Blog</a>
           </li>          
@@ -76,6 +77,9 @@
 
       <p class="m-0 mtb1 custom-color">&copy; 2024 Emmaaserorate. Desarrollado por wsomas</p>
     
+      <div class="container" style="text-align: center;">
+        <img src="{% static 'proyectoweapp/images/WS-nobg.png' %}" alt="Logo de la aplicación" style="width: 150px;">    
+      </div>
     
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

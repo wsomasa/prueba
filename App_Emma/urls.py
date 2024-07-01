@@ -11,7 +11,7 @@ urlpatterns = [
     path('', views.home),
     path('App1/', include('App1.urls')),
     path('blog/', include('App_blog.urls')),
-    path('Areas/', include('App_areas.urls')),
+    path('area/', include('App_Area.urls')),
 
 ]
 
