@@ -3,12 +3,12 @@
 {%load static %}
 
 {% block content %}
-  
+
 <section class="page-section">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       {% for post in posts %}
-        <div class="col-md-6 mb-4">
+        <div class="col-md-16 col-lg-6 mb-4">
           <div class="card h-100">
             {% if post.imagen %}
             <div class="text-center">
@@ -16,12 +16,12 @@
             {% endif %}
               <div class="card-body">
                 <h2 class="card-title">{{ post.titulo }}</h2>
-                <p class="card-text text-justify">{{ post.contenido }}</p>
+                <p class="card-text text-justify style="width: 50%;">{{ post.contenido }}</p>
                 <!--<a href="{% url 'post_detail' post.id %}" class="btn btn-primary">Leer más</a>-->
-              </div> 
+              </div>
             </div>
             <div class="card-footer text-muted">
-              Publicado por {{ post.autor }} el {{ post.created }}
+              <!-- Publicado por {{ post.autor }} el {{ post.created }} -->
             </div>
           </div>
         </div>
