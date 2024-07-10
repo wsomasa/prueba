@@ -249,13 +249,15 @@ p {
 
 }
 
+
 .m-0 .mtb1 {
-  color: #FFFACD;
+    font-family: relay;
+    color: #332110;
 }
 
 .custom-color {
   font-family: relay;
-  color: #332110
+  color: white;
 }
 
 
